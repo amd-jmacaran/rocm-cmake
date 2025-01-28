@@ -1,0 +1,17 @@
+[build-system]
+requires = ["scikit-build-core","cget","sphinx"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "rocm-cmake"
+readme = "README.md"
+requires-python = ">=3.7"
+version = "0.1.0"
+
+[tool.scikit-build]
+build.verbose = true
+
+[tool.cibuildwheel]
+build = "cp3*manylinux*"
+manylinux-x86_64-image = "manylinux_2_28"
+archs = ["x86_64"]
