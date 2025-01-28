@@ -5,7 +5,7 @@ build-backend = "scikit_build_core.build"
 [project]
 name = "rocm-cmake"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 version = "0.1.0"
 
 [tool.scikit-build]
