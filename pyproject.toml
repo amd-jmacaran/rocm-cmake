@@ -10,9 +10,10 @@ version = "0.1.0"
 
 [tool.scikit-build]
 build.verbose = true
+wheel.py-api = "cp37"
 
 [tool.cibuildwheel]
-build = "cp3*manylinux*"
+build = "cp37*manylinux*"
 manylinux-x86_64-image = "manylinux_2_28"
 archs = ["x86_64"]
 # auditwheel expects compiled objects or libraries
